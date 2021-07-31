@@ -22,7 +22,7 @@ const Search = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer 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',
+          'Authorization': `Bearer ${process.env.NEXT_PUBLIC_ENV_GITHUB_TOKEN}`,
         },
         body: JSON.stringify({
           query: `
